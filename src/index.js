@@ -13,5 +13,9 @@ btn.onclick = function () {
   document.write("\n");
   console.log("made by karim :)");
   document.title = test;
+ mixpanel.track('buttonclick', {
+  'source': "button",
+  'is cool': true,
+});
 };
 document.body.appendChild(btn);
